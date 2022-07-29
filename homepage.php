@@ -9,11 +9,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Hello, world!</title>
-    <!-- <style>
-      nav{
-        background: #EBF5FB;
+    <style>
+      body{
+        background: #D1E9F7;
       }
-    </style> -->
+      nav{
+        background:#A1D8F9;
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
@@ -29,10 +32,10 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#">View Cart</a>
+        <a class="nav-link" href="#">Products</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="products.php">Products</a>
+        <a class="nav-link" href="products.php">Modification</a>
       </li>
       
     </ul>
