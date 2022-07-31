@@ -29,8 +29,23 @@
         color:white;
         border-radius:5px;
       }
-      nav {
+      nav{
         background: rgb(68,151,200);
+          background: linear-gradient(90deg, rgba(68,151,200,1) 0%, rgba(169,202,222,1) 44%, rgba(72,152,168,1) 100%);
+        }
+        #customize img{
+          height:500px;
+        }
+        #customize input{
+          height:40px;
+          width:180px;
+          background:#0275d8;
+          border:none;
+          color:white;
+          border-radius:5px;
+        }
+         footer {
+          background: rgb(68,151,200);
           background: linear-gradient(90deg, rgba(68,151,200,1) 0%, rgba(169,202,222,1) 44%, rgba(72,152,168,1) 100%);
         }
 
@@ -135,18 +150,24 @@
 
 <!-- Delivery Details Part -->
 
-<div class="container mt-5">
-  <h3 class="text-center mb-3">Give Information for Delivery</h3>
+<div class="container mt-5" id="customize">
+  <h3 class="text-center mb-3">Give Information for Home Delivery</h3>
   <div class="card mb-3">
-  <img class="card-img-top" src="Images/bike-bg.jpg" alt="Card image cap">
+  <img class="card-img-top" src="Images/delivery-det.png" alt="Card image cap">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  <a href='deliver-datails.php'><input type='button' value='Submit Your Details' name='details'></a>
   </div>
 </div>
 </div>
 
+<!-- Footer -->
+<footer class="bg-light text-center text-lg-start mt-5">
+  <!-- Copyright -->
+  <div class="text-center p-3">
+    © 2020 Copyright:
+    <a class="text-dark" href=" ">BlueCode.com</a>
+  </div>
+</footer>
 <!-- add javascript  file  -->
 <script src="JS/buy.js"></script>
   </body>
