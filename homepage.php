@@ -33,10 +33,10 @@
         background: rgb(68,151,200);
           background: linear-gradient(90deg, rgba(68,151,200,1) 0%, rgba(169,202,222,1) 44%, rgba(72,152,168,1) 100%);
         }
-        #customize img{
+        #delivery_info img{
           height:500px;
         }
-        #customize input{
+        #delivery_info input{
           height:40px;
           width:180px;
           background:#0275d8;
@@ -68,7 +68,7 @@
         <a class="nav-link" href="#products">Products</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="make-style.php">Delivery_Details</a>
+        <a class="nav-link" href="#delivery_info">Delivery_Details</a>
       </li>
       <li class="nav-item-active">
       <form class="d-flex ml-5">
@@ -89,7 +89,7 @@
 </nav>
 <main class="main">
 
-<h3 class="text-center mt-5 mb-3" id="products">Products</h3>
+<h3 class="text-center mt-5 mb-3" id="products">Our Products</h3>
 
     <div class="row ">
       <div class="col-md-9 col-lg-9 col-sm-7">
@@ -150,7 +150,7 @@
 
 <!-- Delivery Details Part -->
 
-<div class="container mt-5" id="customize">
+<div class="container mt-5" id="delivery_info">
   <h3 class="text-center mb-3">Give Information for Home Delivery</h3>
   <div class="card mb-3">
   <img class="card-img-top" src="Images/delivery-det.png" alt="Card image cap">
