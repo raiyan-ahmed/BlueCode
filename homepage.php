@@ -155,7 +155,7 @@
   <div class="card mb-3">
   <img class="card-img-top" src="Images/delivery-det.png" alt="Card image cap">
   <div class="card-body">
-  <a href='deliver-datails.php'><input type='button' value='Submit Your Details' name='details'></a>
+  <a href='delivery-datails.php'><input type='button' value='Submit Your Details' name='details'></a>
   </div>
 </div>
 </div>
@@ -164,8 +164,8 @@
 <footer class="bg-light text-center text-lg-start mt-5">
   <!-- Copyright -->
   <div class="text-center p-3">
-    © 2020 Copyright:
-    <a class="text-dark" href=" ">BlueCode.com</a>
+    © 2022 Copyright:
+    <a class="text-dark" href=" ">Raiyan Ahmed</a>
   </div>
 </footer>
 <!-- add javascript  file  -->
