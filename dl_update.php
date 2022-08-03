@@ -30,6 +30,10 @@ $data = mysqli_fetch_array($record);
             box-shadow: 0px 0px 15px 0px;
             border-radius: 10px;
         }
+        .logo img{
+          width:20%;
+          height:20%;
+        }
     </style>
 </head>
 
@@ -38,6 +42,9 @@ $data = mysqli_fetch_array($record);
         <div class="row justify-content-center mt-5">
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <form action="dl_updateAction.php" method="post" enctype="multipart/form-data">
+                <div class="logo mb-5 d-flex justify-content-center">
+          <img src="Images/Blue_Code.png" alt="logo">
+          </div>
                     <div class="mb-3">
                         <h3 class="text-center">Update Your Information</h3>
                     </div>
