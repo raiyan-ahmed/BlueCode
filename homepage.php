@@ -68,7 +68,7 @@
         <a class="nav-link" href="#products">Products</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#delivery_info">Delivery_Details</a>
+        <a class="nav-link" href="delivery_details.php">Delivery_Details</a>
       </li>
       <li class="nav-item-active">
       <form class="d-flex ml-5">
@@ -155,7 +155,7 @@
   <div class="card mb-3">
   <img class="card-img-top" src="Images/delivery-det.png" alt="Card image cap">
   <div class="card-body">
-  <a href='delivery-datails.php'><input type='button' value='Submit Your Details' name='details'></a>
+  <a class="btn btn-primary" href="delivery_details.php">Submit Your Details</a>
   </div>
 </div>
 </div>
