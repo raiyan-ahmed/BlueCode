@@ -10,24 +10,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <style>
         body {
-            background: #E9E4F0;
+            background: rgb(68,151,200);
+          background: linear-gradient(90deg, rgba(68,151,200,1) 0%, rgba(169,202,222,1) 44%, rgba(72,152,168,1) 100%);
         }
 
         form {
-            background-image: linear-gradient(#948E99, #2E1437);
+            background: #EBF5FB;
             padding: 15px;
-            box-shadow: 0px 0px 10px 0px;
-            border: 2px solid ghostwhite;
-            border-radius: 15px;
-            color: white;
+            box-shadow: 0px 0px 15px 0px;
+            border-radius: 10px;
         }
-
-        .btn-color {
-            background: #948E99;
-        }
-
         table {
-            background-image: linear-gradient(#948E99, #2E1437);
+            background: #EBF5FB;
+            padding: 15px;
+            box-shadow: 0px 0px 15px 0px;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -39,7 +36,7 @@
 
                 <form action="dl_insert.php" method="post" enctype="multipart/form-data">
                     <div class="mb-3">
-                        <h3 class="text-center">Insert Your Informations</h3>
+                        <h3 class="text-center">Submit Your Informations</h3>
                     </div>
                     <div class="mb-3">
                         <label for="y_name">Your Name:</label>
@@ -61,18 +58,20 @@
                         <label for="image">Image:</label>
                         <input type="file" class="form-control" name="image" required>
                     </div>
-                    <button type="Submit" class="btn btn-color text-light fw-bold col-12">Insert</button>
+                    <button type="Submit" class="btn btn-primary fw-bold col-12">Submit</button>
                 </form>
             </div>
         </div>
     </div>
     <div class="container mt-5">
 
-        <table class="table table-color text-light">
+        <table class="table table-color">
             <thead>
                 <tr>
                     <th scope="col">id</th>
-                    <th scope="col">Name</th>
+                    <th scope="col">Your Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">P_Name</th>
                     <th scope="col">Price</th>
                     <th scope="col">Image</th>
                     <th scope="col">Update</th>

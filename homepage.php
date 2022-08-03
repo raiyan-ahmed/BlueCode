@@ -172,29 +172,3 @@
 <script src="JS/buy.js"></script>
   </body>
 </html>
-
-
-<?php
-//$username = "";
-//$pass = "";
-
-//session_start();
-//if (isset($_SESSION['username'])) {
-    //echo "<h1>Hello " . $_SESSION['username'] . "</h1>";
-
-    //echo "<br><a href='products.php'>Products</a>";
-    //echo "<br><a href='logout.php'><input type='button' value='logout' name='logout'></a>";
-    //} 
-    
-   //else{
-       // if ($_POST['username'] == $username && $_POST['pass'] == $pass) {
-            //$_SESSION['username'] = $username;
-            // echo "<script>alert('valid user!')</script>";
-            //echo "<script>location.href='homepage.php'</script>";
-        //} 
-        //else {
-            // echo "<script>alert('invalid user!')</script>";
-            //echo "<script>location.href='index.php'</script>";
-       // }
-   //}
-   ?>
