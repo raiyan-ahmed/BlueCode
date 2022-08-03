@@ -7,7 +7,7 @@
     <title>BlueCode</title>
 
     <!--Link CSS File-->
-    <link rel="stylesheet" href="Style/buy-style.css" />
+     <link rel="stylesheet" href="Style/buy-style.css"/> 
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -48,13 +48,21 @@
           background: rgb(68,151,200);
           background: linear-gradient(90deg, rgba(68,151,200,1) 0%, rgba(169,202,222,1) 44%, rgba(72,152,168,1) 100%);
         }
+        .logo img{
+          width:22%;
+          height:20%;
+        }
 
     </style>
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#"><span class="decorating">Blue</span>Code</a>
+      <div class="logo d-flex justify-content-start ml-1">
+        <img src="Images/Blue_Code_hm.png" alt="logo">
+        <a class="navbar-brand ml-3" href="#"><span class="decorating">Blue</span>Code</a>
+      </div>
+  
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -165,7 +173,7 @@
   <!-- Copyright -->
   <div class="text-center p-3">
     © 2022 Copyright:
-    <a class="text-dark" href=" ">Raiyan Ahmed</a>
+    <a class="text-dark" href="">BlueCode.com</a>
   </div>
 </footer>
 <!-- add javascript  file  -->

@@ -20,6 +20,10 @@
           background: rgb(68,151,200);
           background: linear-gradient(90deg, rgba(68,151,200,1) 0%, rgba(169,202,222,1) 44%, rgba(72,152,168,1) 100%);
         }
+        .logo img{
+          width:20%;
+          height:20%;
+        }
     </style>
   </head>
   <body>
@@ -28,6 +32,9 @@
       <div class="row justify-content-center mt-4">
         <div class="col-lg-4 col-md-6 col-sm-12">
         <form action="homepage.php" method="post">
+          <div class="logo mb-5 d-flex justify-content-center">
+          <img src="Images/Blue_Code.png" alt="logo">
+          </div>
           <div class="mb-3 text-center">
             <h4>Log in</h4>
           </div>
