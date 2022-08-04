@@ -40,11 +40,11 @@
           </div>
               <div class="mb-3">
               <label for="fname">Username:</label>
-                <input type="text" class="form-control" name="username">
+                <input type="text" class="form-control" name="l_username">
               </div>
               <div class="mb-3">
               <label for="fpass">Password:</label>
-                <input type="text" class="form-control" name="pass">
+                <input type="text" class="form-control" name="l_pass">
               </div>
               <button type="log_in" class="btn btn-primary col-12">Log in</button>
               <br>
