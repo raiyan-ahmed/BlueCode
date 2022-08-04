@@ -76,6 +76,9 @@
 
         </div>
     </div>
+
+    <!-- add javascript  file  -->
+<script src="JS/reg_validation.js"></script>
 </body>
 
 </html>
