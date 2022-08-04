@@ -12,7 +12,7 @@ $mobile_pattern = "/(\+88)?-?01[3-9]\d{8}/";
 $pass_pattern = "/((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@%&*#£])).{6,20}/";
 $email_pattern = "/(cse|eee|law)_\d{10}@lus.ac.bd/";
 
-$duplicate_username = mysqli_query($conn, "SELECT * FROM `register_user` WHERE username='$ruser_name'");
+$duplicate_username = mysqli_query($conn, "SELECT * FROM `register_users` WHERE username='$ruser_name'");
 
 if (mysqli_num_rows($duplicate_username) > 0) {
     echo "<script>alert('Username Already Registered')</script>";
@@ -28,12 +28,13 @@ if (mysqli_num_rows($duplicate_username) > 0) {
     echo "<script>location.href='registration.php'</script>";
 } else if (!preg_match($email_pattern, $remail)) {
     echo "<script>alert('LU email required!')</script>";
+    echo "<script>location.href='registration.php'</script>";
 } else if (!preg_match($mobile_pattern, $rphone)) {
     echo "<script>alert('BD phone number only!')</script>";
     echo "<script>location.href='registration.php'</script>";
 } else {
 
-    $insert_query = "INSERT INTO `register_user`(`username`, `password`, `email`, `phone`) VALUES ('$ruser_name','$rpassword','$remail','$rphone')";
+    $insert_query = "INSERT INTO `register_users`(`username`, `password`, `email`, `phone`) VALUES ('$ruser_name','$rpassword','$remail','$rphone')";
     if (!mysqli_query($conn, $insert_query)) 
     {
         echo "<script>alert('Not Inserted!')</script>";

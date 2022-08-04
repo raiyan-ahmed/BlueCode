@@ -24,6 +24,10 @@
           width:20%;
           height:20%;
         }
+        span{
+            color: red;
+            font-size: smaller;
+        }
     </style>
 </head>
 
@@ -31,7 +35,7 @@
     <div class="container-fluid">
         <div class="row justify-content-center mt-5">
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <form action="insert.php" method="post">
+                <form action="insert.php" method="post" onsubmit="return formValidation()">
                 <div class="logo mb-5 d-flex justify-content-center">
           <img src="Images/Blue_Code.png" alt="logo">
           </div>
@@ -40,23 +44,28 @@
                     </div>
                     <div class="mb-3">
                         <label for="fname">Username:</label>
-                        <input type="text" class="form-control" name="ruser_name">
+                        <input type="text" class="form-control" name="ruser_name" id="ifname">
+                        <span id="efname"></span>
                     </div>
                     <div class="mb-3">
                         <label for="pass">Password:</label>
-                        <input type="text" class="form-control" name="rpassword">
+                        <input type="text" class="form-control" name="rpassword" id="ipass">
+                        <span id="epass"></span>
                     </div>
                     <div class="mb-3">
-                        <label for="pass">Confirm Password:</label>
-                        <input type="text" class="form-control" name="rcon_pass">
+                        <label for="cpass">Confirm Password:</label>
+                        <input type="text" class="form-control" name="rcon_pass" id="iconfirm-pass">
+                        <span id="econfirm-pass"></span>
                     </div>
                     <div class="mb-3">
                         <label for="email">Email:</label>
-                        <input type="email" class="form-control" name="remail">
+                        <input type="email" class="form-control" name="remail" id="iemail">
+                        <span id="e-email"></span>
                     </div>
                     <div class="mb-3">
-                        <label for="phone">Phone:</label>
-                        <input type="text" class="form-control" name="rphone">
+                        <label for="mobile">Phone:</label>
+                        <input type="text" class="form-control" name="rphone" id="imob">
+                        <span id="emob"></span>
                     </div>
                     <button type="Register" class="btn btn-primary col-12">Register</button>
                     <div class="text-end mt-1">
