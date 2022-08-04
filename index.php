@@ -31,7 +31,7 @@
     <div class="container-fluid">
       <div class="row justify-content-center mt-4">
         <div class="col-lg-4 col-md-6 col-sm-12">
-        <form action="homepage.php" method="post">
+        <form action="loginAction.php" method="post">
           <div class="logo mb-5 d-flex justify-content-center">
           <img src="Images/Blue_Code.png" alt="logo">
           </div>
