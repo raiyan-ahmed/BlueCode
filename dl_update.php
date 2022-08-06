@@ -1,4 +1,15 @@
 <?php
+session_start();
+if (isset($_SESSION['username'])) {
+    echo "<script>location.href='dl_update.php'</script>";
+} else {
+    echo "<script>alert('Do not access through URL')</script>";
+    echo "<script>location.href='index.php'</script>";
+}
+
+?>
+
+<?php
 include 'config.php';
 
 $id = $_GET['id'];

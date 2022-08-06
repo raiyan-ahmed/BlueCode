@@ -7,7 +7,7 @@ function formValidation() {
 
 
     var usernamePattern = /[A-Za-z .]{3,20}$/
-    var passPattern = /((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@%&*#£])){6-20}$/
+    var passPattern = /((?=.\d)(?=.[a-z])(?=.[A-Z])(?=.[@%&*#£])){15}/
     var emailPattern = /(cse|eee|bba|law|ce)_\d{10}@lus.ac.bd/
     var mobilePattern = /^(\+88)?-?01[3-9]\d{8}$/
 
@@ -37,7 +37,7 @@ function formValidation() {
     }
 
     //For Confirm Password
-    if (!cpass.match(pass)) {
+    if (!cpass.match(passPattern)) {
         document.getElementById("econfirm-pass").innerHTML = "Password not matched!";
         return false;
     }
