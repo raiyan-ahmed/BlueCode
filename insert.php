@@ -9,7 +9,8 @@ $rphone = $_POST['rphone'];
 
 $username_pattern = "/[A-Za-z .]{3,20}/";
 $mobile_pattern = "/(\+88)?-?01[3-9]\d{8}/";
-$pass_pattern = "/((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@%&*#£])){6-20}/";
+//$pass_pattern = "/((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@%&*#£])){6-20}/";
+$pass_pattern = "/[A-Za-z .]{3,20}/";
 $email_pattern = "/(cse|eee|law)_\d{10}@lus.ac.bd/";
 
 $duplicate_username = mysqli_query($conn, "SELECT * FROM `register_users` WHERE username='$ruser_name'");

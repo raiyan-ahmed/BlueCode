@@ -49,12 +49,12 @@
                     </div>
                     <div class="mb-3">
                         <label for="pass">Password:</label>
-                        <input type="text" class="form-control" name="rpassword" id="ipass">
+                        <input type="password" class="form-control" name="rpassword" id="ipass">
                         <span id="epass"></span>
                     </div>
                     <div class="mb-3">
                         <label for="cpass">Confirm Password:</label>
-                        <input type="text" class="form-control" name="rcon_pass" id="iconfirm-pass">
+                        <input type="password" class="form-control" name="rcon_pass" id="iconfirm-pass">
                         <span id="econfirm-pass"></span>
                     </div>
                     <div class="mb-3">

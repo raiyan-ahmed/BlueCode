@@ -44,7 +44,7 @@
               </div>
               <div class="mb-3">
               <label for="fpass">Password:</label>
-                <input type="text" class="form-control" name="l_pass">
+                <input type="password" class="form-control" name="l_pass">
               </div>
               <button type="log_in" class="btn btn-primary col-12">Log in</button>
               <br>

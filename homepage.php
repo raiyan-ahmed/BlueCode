@@ -20,6 +20,9 @@ if (isset($_SESSION['username'])) {
     <!--Link CSS File-->
      <link rel="stylesheet" href="Style/buy-style.css"/> 
 
+     <!--Adding Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -31,6 +34,7 @@ if (isset($_SESSION['username'])) {
     <style>
       body{
         background: #D1E9F7;
+        margin:0%;
       }
       input{
         height:40px;
@@ -44,6 +48,7 @@ if (isset($_SESSION['username'])) {
         background: rgb(68,151,200);
           background: linear-gradient(90deg, rgba(68,151,200,1) 0%, rgba(169,202,222,1) 44%, rgba(72,152,168,1) 100%);
         }
+        
         #delivery_info img{
           height:500px;
         }
@@ -55,17 +60,58 @@ if (isset($_SESSION['username'])) {
           color:white;
           border-radius:5px;
         }
-         footer {
-          background: rgb(68,151,200);
-          background: linear-gradient(90deg, rgba(68,151,200,1) 0%, rgba(169,202,222,1) 44%, rgba(72,152,168,1) 100%);
-        }
         .logo img{
           width:22%;
           height:20%;
         }
+        /*********Details Part Style**********/
+.details-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background: rgb(68,151,200);
+    background: linear-gradient(90deg, rgba(68,151,200,1) 0%, rgba(169,202,222,1) 44%, rgba(72,152,168,1) 100%);
+    color: black;
+    margin-top: 75px;
+    padding-top: 20px;
+    justify-content: space-evenly;
+}
 
+.info-title {
+    margin-bottom: 15px;
+}
+
+.basic-info p {
+    margin-top: 3px;
+}
+
+.social-icon {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social-icon i {
+    color: black;
+}
+
+/***** Footer ******/
+footer {
+          width: 100%;
+          background: rgb(68,151,200);
+          background: linear-gradient(90deg, rgba(68,151,200,1) 0%, rgba(169,202,222,1) 44%, rgba(72,152,168,1) 100%);
+          color: black;
+          text-align: center;
+          padding-top: 50px;
+          font-size: 16px;
+          border:1px solid #4d9dcb; 
+          
+        }
+        
     </style>
   </head>
+
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -87,7 +133,10 @@ if (isset($_SESSION['username'])) {
         <a class="nav-link" href="#products">Products</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#delivery_info">Delivery_Details</a>
+        <a class="nav-link" href="#delivery_info">Delivery Details</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#contact">Contact</a>
       </li>
       <li class="nav-item-active">
       <form class="d-flex ml-5">
@@ -169,7 +218,7 @@ if (isset($_SESSION['username'])) {
 
 <!-- Delivery Details Part -->
 
-<div class="container mt-5" id="delivery_info">
+<div class="container mt-5 mb-5" id="delivery_info">
   <h3 class="text-center mb-3">Give Information for Home Delivery</h3>
   <div class="card mb-3">
   <img class="card-img-top" src="Images/delivery-det.png" alt="Card image cap">
@@ -179,15 +228,44 @@ if (isset($_SESSION['username'])) {
 </div>
 </div>
 
-<!-- Footer -->
-<footer class="bg-light text-center text-lg-start mt-5">
-  <!-- Copyright -->
-  <div class="text-center p-3">
-    © 2022 Copyright:
-    <a class="text-dark" href="">BlueCode.com</a>
-  </div>
-</footer>
+<!-- About us part -->
+<div class="details-container mb-0" id="contact">
+        <div class="basic-info">
+            <h3 class="info-title">BlueCode</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Sylhet Sadar, Sylhet-3100</p>
+            <p><i class="fa-solid fa-envelope"></i> blue_code@support.com</p>
+            <p><i class="fa-solid fa-phone"></i> +880821000000</p>
+            <p><i class="fa-solid fa-phone"></i> (Available : 10:00am to 07:00pm)</p>
+        </div>
+        <div class="social-info">
+            <h3 class="info-title">Follow Us</h3>
+            <div class="social-icon">
+                <div>
+                    <a target="_blank" href="https://web.facebook.com/"> <i
+                            class="fa-brands fa-facebook-square"></i></a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.instagram.com/"> <i
+                            class="fa-brands fa-instagram-square"></i></a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.linkedin.com/signup"> <i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.youtube.com"> <i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--------Footer Section--------->
+<footer>
+        <p>Copyright <i class="fa-regular fa-copyright"></i> 2022 BlueCode.com</p>
+      </footer>
+
 <!-- add javascript  file  -->
 <script src="JS/buy.js"></script>
+
   </body>
 </html>
