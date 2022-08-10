@@ -12,7 +12,7 @@ if (isset($_SESSION['username'])) {
 <?php
 include 'config.php';
 
-$id = $_GET['id'];
+$id = $_POST['id'];
 
 $dataFetchQuery = "SELECT * FROM `dl_infos` WHERE id='$id'";
 $record = mysqli_query($conn, $dataFetchQuery);

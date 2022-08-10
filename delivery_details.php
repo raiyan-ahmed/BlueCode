@@ -31,6 +31,9 @@ if (isset($_SESSION['username'])) {
             box-shadow: 0px 0px 15px 0px;
             border-radius: 10px;
         }
+        label{
+            color:black;
+        }
         table {
             background: #EBF5FB;
             padding: 15px;

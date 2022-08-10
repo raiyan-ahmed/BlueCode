@@ -115,10 +115,13 @@ footer {
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+        
       <div class="logo d-flex justify-content-start ml-1">
         <img src="Images/Blue_Code_hm.png" alt="logo">
         <a class="navbar-brand ml-3" href="#"><span class="decorating">Blue</span>Code</a>
       </div>
+    
   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
